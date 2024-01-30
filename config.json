@@ -1,0 +1,26 @@
+{
+	"network.http.prompt-temp-redirect": true,
+	"network.dns.disablePrefetch": true,
+	"browser.enable_eutomatic_image_resizing": false,
+	"browser.newtab.preload":false,
+	"browser.serviceWorkers.navigationPreload.enabled": false,
+	"dom.serviceWorkers.navigationPreload.enabled":false,
+	"browser.newtabpage.enabled":false,
+	"extensions.webextensions.identity.redirectDomain": "",
+	"twork.cookie.sameSite.IaxByDefault.allowBoomerangRedirect":false,
+	"browser.meta_refresh_when_inactive.disable": true,
+	"service.sync.prefs.sync.browser.newtabpage.enabled":false,
+	"media.encoder.webm.enabled":false,
+	"media.webrtc.platformencoder.sw_only":false,
+	"browser.menu.showCharacterEncoding":true,
+	"dom.keyboardevent.keypress.hack.dispatch_non_printable_keys":"",
+	"dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode":"",
+	"app.update.background.scheduling.enabled":false,
+	"app.update.auto":false,
+	"browser.contentblocking.report.proxy_extension.url":"",
+	"browser.contentblocking.report.proxy.enabled":false,
+	"media.peerconnection.ice.proxy_only":false,
+	"media.peerconnection.ice.proxy_only_if_behind_proxy":false,
+	"media.peerconnection.ice.proxy_only_if_pbmode":false
+}
+	
