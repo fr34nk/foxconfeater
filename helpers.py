@@ -9,21 +9,6 @@ def el_select (driver, el_type=None, el_attr=None, el_attr_value=None, opts={}):
     - sub selections can be applyied: with_parent, with sibbling
     """
 
-    # selector = "input"
-    # selector = selector + css_selector
-
-    # <input type="checkbox" id="showWarningNextTime" checked="">
-
-    # assert "Python" in driver.title
-    # elem = driver.find_element(By.NAME, "q")
-    # elem.clear()
-    # elem.send_keys("pycon")
-    # elem.send_keys(Keys.RETURN)
-    # assert "No results found." not in driver.page_source
-    # driver.close()
-
-    # checkbox = driver.find_element(By.CSS_SELECTOR, selector)
-
     eltype=el_type or "*"
     if el_attr is not None and el_attr_value is not None:
         xpath_selector = '//{}[@{}=\"{}\"]'.format(eltype, el_attr, el_attr_value)
