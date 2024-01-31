@@ -15,6 +15,6 @@ def str_to_boolean (value):
         return True
     if value == 'false' or value == 'False' or value == False:
         return False
-    raise Exception('Unknown value type: {}'.format(value))  
+    return value
 
 

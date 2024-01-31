@@ -32,7 +32,6 @@ def el_select (driver, el_type=None, el_attr=None, el_attr_value=None, opts={}):
 
     el = driver.find_element(By.XPATH, xpath_selector)
 
-    # breakpoint()
     if not el: return None
 
     def with_sibling (el_type, el_attr, el_attr_value, el=el):

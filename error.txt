@@ -1,1 +1,1 @@
-[PropertyEditError] property: media.peerconnection.ice.proxy_only_if_pbmode, value: Falselist index out of range
+[PropertyEditError] property: media.peerconnection.ice.proxy_only_if_pbmode, value: FalseHTTPConnectionPool(host='localhost', port=34571): Max retries exceeded with url: /session/27192840-2285-402a-8353-43cff8e30735/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1b2d9b3f50>: Failed to establish a new connection: [Errno 111] Connection refused'))

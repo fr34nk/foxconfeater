@@ -1,7 +1,7 @@
 {
 	"network.http.prompt-temp-redirect": true,
 	"network.dns.disablePrefetch": true,
-	"browser.enable_eutomatic_image_resizing": false,
+	"browser.enable_automatic_image_resizing": false,
 	"browser.newtab.preload":false,
 	"browser.serviceWorkers.navigationPreload.enabled": false,
 	"dom.serviceWorkers.navigationPreload.enabled":false,
