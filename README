@@ -1,0 +1,18 @@
+# About Project
+Its an automation tool that will parse your .json config file and will apply the settings to firefox
+
+# Lib and Tools
+
+- Selenium
+
+# Tasks
+
+- [x] Consume config settings file 
+- [x] Save modified configurations into file
+- [x] Save new user properties that was not present in the browser into a file
+- [ ] Implement remote configuration
+- [ ] Enable the application consume different config profiles
+- [ ] Enable the application to save different config profiles
+- [ ] Create Terminal Command Prompt to execute operations
+
+

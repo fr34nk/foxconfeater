@@ -12,9 +12,6 @@ class ConfigType (Enum):
 
 class RowConfig ():
     element=None
-    # new :: configuration that was not present in the browser and the user 
-    # touched :: configuration that was changed since last browser initilization
-    # untouched :: configuration that was present since last browser intialization
     type=ConfigType
     key=None
     value=None
@@ -64,27 +61,19 @@ class ConfigPage (Page):
             input_search.value.send_keys(term)
             input_search.value.send_keys(self.browser.Keys.RETURN)
 
-
     def input_search_clear (self):
         input_search = el_select(self.browser.driver, 'input', 'id', 'about-config-search')
         input_search.value.clear()
-
 
     def edit_property (self, property, value):
         row_config = self.find_property_element(property)
         if row_config is None:
             return None
 
-        # TODO: apply treatment for multiple values
         config = RowConfig(row_config[0])
-
-        # if property == 'extensions.webextensions.identity.redirectDomain':
-        #     breakpoint()
 
         if config.type == ConfigType.UNTOUCHED or \
             config.type == ConfigType.CHANGED:
-
-            # breakpoint()
             if type(str_to_boolean(value)) == bool:
                 current_prop_value = str_to_boolean(config.value)
                 boolValue = str_to_boolean(value)
